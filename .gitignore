@@ -1,0 +1,21 @@
+# Gradle files
+.gradle/
+build/
+
+# Kotlin files
+*.class
+*.kotlin_metadata
+*.kotlin_builtins
+
+# Quarkus files
+quarkus.log
+target/
+
+# IDE files
+.idea/
+*.iml
+*.iws
+
+# OS files
+.DS_Store
+Thumbs.db
