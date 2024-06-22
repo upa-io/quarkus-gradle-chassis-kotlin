@@ -1,0 +1,26 @@
+version: 2
+updates:
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "gradle"
+    assignees:
+      - "aguirre-jes"
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "docker"
+    assignees:
+      - "aguirre-jes"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "github-actions"
+    assignees:
+      - "aguirre-jes"
