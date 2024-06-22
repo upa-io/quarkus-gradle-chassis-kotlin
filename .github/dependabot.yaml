@@ -5,15 +5,15 @@ updates:
     schedule:
       interval: "daily"
     labels:
-      - "gradle"
+      - "Gradle"
     assignees:
       - "aguirre-jes"
   - package-ecosystem: "docker"
-    directory: "/"
+    directory: "/src/main/docker"
     schedule:
       interval: "daily"
     labels:
-      - "docker"
+      - "Docker"
     assignees:
       - "aguirre-jes"
   - package-ecosystem: "github-actions"
@@ -21,6 +21,6 @@ updates:
     schedule:
       interval: "daily"
     labels:
-      - "github-actions"
+      - "Github-actions"
     assignees:
       - "aguirre-jes"
