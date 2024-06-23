@@ -23,11 +23,13 @@
 				"streetsidesoftware.code-spell-checker",
 				"adpyke.codesnap",
 				"rangav.vscode-thunder-client",
-				"fwcd.kotlin",
-				"mathiasfrohlich"
+				"fwcd.kotlin"
 			]
 		}
 	},
+
+	// Ports used by the dev container. If your application needs to expose additional ports, add them here.
+	"forwardPorts": [8080],
 
     // Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "java -version"
