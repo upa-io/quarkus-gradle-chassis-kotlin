@@ -2,6 +2,7 @@ plugins {
     kotlin("jvm") version "2.0.0"
     kotlin("plugin.allopen") version "2.0.0"
     id("io.quarkus")
+    id("org.sonarqube") version "4.4.1.3373"
 }
 
 repositories {
@@ -40,6 +41,14 @@ allOpen {
     annotation("jakarta.enterprise.context.ApplicationScoped")
     annotation("jakarta.persistence.Entity")
     annotation("io.quarkus.test.junit.QuarkusTest")
+}
+
+sonar {
+  properties {
+    property("sonar.projectKey", "upa-io_quarkus-gradle-chassis-kotlin")
+    property("sonar.organization", "upa-io")
+    property("sonar.host.url", "https://sonarcloud.io")
+  }
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
