@@ -4,12 +4,10 @@ import io.quarkus.test.junit.QuarkusTest
 import io.quarkus.test.junit.TestProfile
 import io.restassured.RestAssured.given
 import io.restassured.common.mapper.TypeRef
-import org.hamcrest.CoreMatchers.`is`
-import org.junit.jupiter.api.Test
-import upaio.apis.entities.Equipos
-import upaio.apis.config.TestProfileDB
-
 import org.junit.jupiter.api.Assertions.assertFalse
+import org.junit.jupiter.api.Test
+import upaio.apis.config.TestProfileDB
+import upaio.apis.entities.Equipos
 
 @QuarkusTest
 @TestProfile(TestProfileDB::class)

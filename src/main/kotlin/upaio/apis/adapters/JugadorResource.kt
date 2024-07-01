@@ -1,12 +1,10 @@
+import jakarta.inject.Inject
+import jakarta.ws.rs.Consumes
 import jakarta.ws.rs.GET
 import jakarta.ws.rs.Path
 import jakarta.ws.rs.Produces
 import jakarta.ws.rs.core.MediaType
 import jakarta.ws.rs.core.Response
-import jakarta.ws.rs.Consumes
-import jakarta.inject.Inject
-import upaio.apis.usescases.EquiposServices
-import upaio.apis.entities.Equipos
 import upaio.apis.usescases.JugadorServices
 
 @Path("/upaio/apis/v1")

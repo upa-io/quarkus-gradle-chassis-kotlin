@@ -1,7 +1,7 @@
-package upaio.apis.repositories
+package upaio.apis.entities
 
 import upaio.apis.entities.Equipos
 
-interface IEquiposRepository {
+fun interface IEquiposRepository {
     fun listAll(): List<Equipos>
 }

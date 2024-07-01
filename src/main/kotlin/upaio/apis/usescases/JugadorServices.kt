@@ -1,11 +1,9 @@
 package upaio.apis.usescases
 
 import jakarta.enterprise.context.ApplicationScoped
-import jakarta.transaction.Transactional
 import jakarta.inject.Inject
+import upaio.apis.entities.IJugadorRepository
 import upaio.apis.entities.Jugador
-import upaio.apis.repositories.JugadorRepository
-import upaio.apis.repositories.IJugadorRepository
 
 @ApplicationScoped
 class JugadorServices {

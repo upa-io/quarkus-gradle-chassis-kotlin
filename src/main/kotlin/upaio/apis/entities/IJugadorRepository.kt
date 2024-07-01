@@ -1,7 +1,5 @@
-package upaio.apis.repositories
+package upaio.apis.entities
 
-import upaio.apis.entities.Jugador
-
-interface IJugadorRepository {
+fun interface IJugadorRepository {
     fun listAll(): List<Jugador>
 }

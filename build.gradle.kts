@@ -13,12 +13,14 @@ repositories {
 val quarkusPlatformGroupId: String by project
 val quarkusPlatformArtifactId: String by project
 val quarkusPlatformVersion: String by project
+val jakartaPersistenceApiVersion: String by project
+val flywayDatabaseVersion: String by project
 
 dependencies {
     implementation("io.quarkus:quarkus-flyway")
     implementation("io.quarkus:quarkus-hibernate-orm-panache-kotlin")
     implementation("io.quarkus:quarkus-jdbc-postgresql")
-    implementation("jakarta.persistence:jakarta.persistence-api:3.2.0")
+    implementation("jakarta.persistence:jakarta.persistence-api:$jakartaPersistenceApiVersion")
     implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"))
     implementation("io.quarkus:quarkus-rest-jackson")
     implementation("io.quarkus:quarkus-kotlin")
@@ -27,11 +29,11 @@ dependencies {
     implementation("io.quarkus:quarkus-rest")
     testImplementation("io.quarkus:quarkus-junit5")
     testImplementation("io.rest-assured:rest-assured")
-    runtimeOnly("org.flywaydb:flyway-database-postgresql:10.15.0")
+    runtimeOnly("org.flywaydb:flyway-database-postgresql:$flywayDatabaseVersion")
 }
 
 group = "upaio.apis"
-version = "1.0.0-SNAPSHOT"
+version = "1.0.1-SNAPSHOT"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_21

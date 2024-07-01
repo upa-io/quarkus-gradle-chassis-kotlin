@@ -2,8 +2,8 @@ package upaio.apis.usescases
 
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
-import upaio.apis.repositories.IEquiposRepository
 import upaio.apis.entities.Equipos
+import upaio.apis.entities.IEquiposRepository
 
 @ApplicationScoped
 class EquiposServices {
