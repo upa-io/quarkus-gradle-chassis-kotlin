@@ -3,6 +3,8 @@ plugins {
     kotlin("plugin.allopen") version "2.0.0"
     id("io.quarkus")
     id("org.sonarqube") version "5.0.0.4638"
+    id("jacoco")
+    id("org.sonarqube") version "3.5.0.2730"
 }
 
 repositories {
@@ -62,6 +64,12 @@ sonar {
     property("sonar.organization", "upa-io")
     property("sonar.host.url", "https://sonarcloud.io")
   }
+}
+
+tasks.withType<JacocoReport> {
+    reports {
+        xml.required.set(true)
+    }
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
