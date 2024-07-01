@@ -1,6 +1,8 @@
 # rest-kotlin-quickstart
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=upa-io_quarkus-gradle-chassis-kotlin)](https://sonarcloud.io/summary/new_code?id=upa-io_quarkus-gradle-chassis-kotlin)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=upa-io_quarkus-gradle-chassis-kotlin&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=upa-io_quarkus-gradle-chassis-kotlin)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=upa-io_quarkus-gradle-chassis-kotlin&metric=coverage)](https://sonarcloud.io/summary/new_code?id=upa-io_quarkus-gradle-chassis-kotlin)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=upa-io_quarkus-gradle-chassis-kotlin&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=upa-io_quarkus-gradle-chassis-kotlin)
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
