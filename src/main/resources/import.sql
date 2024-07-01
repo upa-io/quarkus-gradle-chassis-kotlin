@@ -1,3 +1,16 @@
+CREATE TABLE equipos (
+    id BIGSERIAL PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    ciudad VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE jugadores (
+    id BIGSERIAL PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    equipo_id BIGINT,
+    FOREIGN KEY (equipo_id) REFERENCES equipos(id)
+);
+
 -- Inserción de datos iniciales
 INSERT INTO equipos (nombre, ciudad) VALUES ('FC Barcelona', 'Barcelona');
 INSERT INTO equipos (nombre, ciudad) VALUES ('Real Madrid', 'Madrid');
