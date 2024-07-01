@@ -14,7 +14,7 @@ class Jugador(
     @ManyToOne
     @JoinColumn(name = "equipo_id")
     @JsonBackReference
-    val equipo: Equipos
+    val equipo: Equipos?
 )
 {
     // Constructor secundario sin argumentos requerido por Hibernate
