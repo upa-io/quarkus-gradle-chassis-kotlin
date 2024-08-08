@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.dsl.KotlinVersion
 
 plugins {
-    kotlin("jvm") version "2.0.10"
-    kotlin("plugin.allopen") version "2.0.0"
+    kotlin("jvm") version "2.0.0"
+    kotlin("plugin.allopen") version "2.0.10"
     id("io.quarkus")
     id("org.sonarqube") version "5.1.0.4882"
     id("jacoco")
