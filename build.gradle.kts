@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinVersion
 
 plugins {
     kotlin("jvm") version "2.2.21"
-    kotlin("plugin.allopen") version "2.2.20"
+    kotlin("plugin.allopen") version "2.2.21"
     id("io.quarkus")
     id("org.sonarqube") version "7.0.1.6134"
     id("jacoco")
