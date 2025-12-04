@@ -5,7 +5,7 @@ plugins {
     kotlin("jvm") version "2.2.21"
     kotlin("plugin.allopen") version "2.2.21"
     id("io.quarkus")
-    id("org.sonarqube") version "7.0.1.6134"
+    id("org.sonarqube") version "7.2.0.6526"
     id("jacoco")
 }
 
